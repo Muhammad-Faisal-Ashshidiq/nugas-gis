@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (feature.geometry.type === "Point") {
                     const row = pointTable.insertRow();
                     const namaCell = row.insertCell(0);
-                    const kordinasitesCell = row.insertCell(1);
-                    const typeCell = row.insertCell(2);
-                    nameCell.innerText = feature.properties.Name;
-                    coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
-                    typeCell.innerText = feature.geometry.type;
+                    const kordinattesCell = row.insertCell(1);
+                    const tipeCell = row.insertCell(2);
+                    namaCell.innerText = feature.properties.Name;
+                    kordinattesCell.innerText = JSON.stringify(feature.geometry.coordinates);
+                    tipeCell.innerText = feature.geometry.type;
                     
                 }
             });
@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (feature.geometry.type === "Polygon") {
                     const row = pointTable.insertRow();
                     const namaCell = row.insertCell(0);
-                    const kordinasitesCell = row.insertCell(1);
+                    const kordinattesCell = row.insertCell(1);
                     const tipeCell = row.insertCell(2);
-                    nameCell.innerText = feature.properties.Name;
-                    coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
-                    typeCell.innerText = feature.geometry.type;
+                    namaCell.innerText = feature.properties.Name;
+                    kordinattesCell.innerText = JSON.stringify(feature.geometry.coordinates);
+                    tipeCell.innerText = feature.geometry.type;
                     
                 }
             });
@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
             data.features.forEach(feature => {
                 if (feature.geometry.type === "LineString") {
                     const row = pointTable.insertRow();
-                    const nameCell = row.insertCell(0);
-                    const coordinatesCell = row.insertCell(1);
-                    const typeCell = row.insertCell(2);
-                    nameCell.innerText = feature.properties.Name;
-                    coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
-                    typeCell.innerText = feature.geometry.type;
+                    const namaCell = row.insertCell(0);
+                    const kordinattesCell = row.insertCell(1);
+                    const tipeCell = row.insertCell(2);
+                    namaCell.innerText = feature.properties.Name;
+                    kordinattesCell.innerText = JSON.stringify(feature.geometry.coordinates);
+                    tipeCell.innerText = feature.geometry.type;
                     
                 }
             });
