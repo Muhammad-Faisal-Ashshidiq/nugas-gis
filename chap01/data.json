@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "stroke": "#000000",
-        "ruko ": "warung ibu ayu"
+        "nama ": "warung ibu ayu"
       },
       "geometry": {
         "coordinates": [
@@ -39,7 +39,7 @@
     {
       "type": "Feature",
       "properties": {
-        "ruko": "konter rrc"
+        "nama": "konter rrc"
       },
       "geometry": {
         "coordinates": [
@@ -82,7 +82,7 @@
       "type": "Feature",
       "properties": {
         "stroke": "#000000",
-        "sewa": "kontrakan ibu ray"
+        "nama": "kontrakan ibu ray"
       },
       "geometry": {
         "coordinates": [
@@ -140,7 +140,7 @@
     {
       "type": "Feature",
       "properties": {
-        "dagang": "warung mah iki"
+        "nama": "warung mah iki"
       },
       "geometry": {
         "coordinates": [
@@ -186,7 +186,7 @@
     {
       "type": "Feature",
       "properties": {
-        "rumah": "rumah ibu nolis"
+        "nama": "rumah ibu nolis"
       },
       "geometry": {
         "coordinates": [
@@ -220,7 +220,7 @@
     {
       "type": "Feature",
       "properties": {
-        "rumah": "rumah ibu oca"
+        "nama": "rumah ibu oca"
       },
       "geometry": {
         "coordinates": [
@@ -274,7 +274,7 @@
     {
       "type": "Feature",
       "properties": {
-        "rumah": "rumah pak aji"
+        "nama": "rumah pak aji"
       },
       "geometry": {
         "coordinates": [
@@ -320,7 +320,7 @@
     {
       "type": "Feature",
       "properties": {
-        "rumah": "rumah pak asep"
+        "nama": "rumah pak asep"
       },
       "geometry": {
         "coordinates": [
@@ -354,7 +354,7 @@
     {
       "type": "Feature",
       "properties": {
-        "rumah": "rumah orang kaya2"
+        "nama": "rumah orang kaya2"
       },
       "geometry": {
         "coordinates": [
@@ -428,7 +428,7 @@
     {
       "type": "Feature",
       "properties": {
-        "sewa": "kontrakan pak aji"
+        "nama": "kontrakan pak aji"
       },
       "geometry": {
         "coordinates": [
