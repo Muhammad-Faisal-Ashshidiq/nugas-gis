@@ -3,9 +3,19 @@
 <head>
     <title>Tugas Chapter 01 Sistem Informasi Geo Grafis
     </title>
+
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- menapilkan maps openlayers( SHow map in openlayers ) -->
+    <a class="skiplink" href="#map">Go to map</a>
+    <div id="map" class="map" tabindex="0"></div>
+    <button id="zoom-out">Zoom out</button>
+    <button id="zoom-in">Zoom in</button>
 
+
+<!-- POINT -->
     <div class="point-table">
     <h1>Tipe Point</h1>
     <table id="pointTable" border="1">
@@ -19,7 +29,8 @@
         <tbody></tbody>
     </table>
 </div>
-
+<!-- ... -->
+<!-- POLYGON -->
 <div class="polygon-table">
     <h1>Tipe Polygon</h1>
     <table id="polygonTable" border="1">
@@ -33,7 +44,7 @@
         <tbody></tbody>
     </table>
 </div>
-
+<!-- POLYLINE -->
 <div class="polyline-table">
     <h1>Tipe Polyline</h1>
     <table id="polylineTable" border="1">
@@ -48,7 +59,9 @@
     </table>
 </div>
 
+<!-- Include the separated JavaScript files -->
+<script type="module" src="./app.js"></script>
+<script type="module" src="./maps.js"></script>
 
-    <script type="module" src="./app.js"></script>
 </body>
 </html>
