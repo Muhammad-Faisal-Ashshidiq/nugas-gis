@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tugas Chapter 01 Sistem Informasi Geo Grafis
-    </title>
-
-    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <title>Tugas Chapter 01 Sistem Informasi Geo Grafis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- menapilkan maps openlayers( SHow map in openlayers ) -->
-    <a class="skiplink" href="#map">Go to map</a>
-    <div id="map" class="map" tabindex="0"></div>
-    <button id="zoom-out">Zoom out</button>
-    <button id="zoom-in">Zoom in</button>
+<body class="bg-gray-200">
+    <div class="container mx-auto p-4">
+        <!-- Menampilkan peta OpenLayers -->
+        <a class="sr-only" href="#map">Go to map</a>
+        <div id="map" class="map bg-white rounded shadow-md p-2" tabindex="0"></div>
+        <div class="flex space-x-4 mt-4">
+            <button id="zoom-out" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Zoom out</button>
+            <button id="zoom-in" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Zoom in</button>
+        </div>
 
-
-<!-- POINT -->
-    <div class="point-table">
-    <h1>Tipe Point</h1>
-    <table id="pointTable" border="1">
-        <thead>
-            <tr>
-                <th>Nama</th>
-                <th>Kordinat</th>
-                <th>Tipe</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-<!-- ... -->
-<!-- POLYGON -->
-<div class="polygon-table">
-    <h1>Tipe Polygon</h1>
-    <table id="polygonTable" border="1">
-        <thead>
-            <tr>
-                <th>Nama</th>
-                <th>Kordinat</th>
-                <th>Tipe</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-<!-- POLYLINE -->
-<div class="polyline-table">
-    <h1>Tipe Polyline</h1>
-    <table id="polylineTable" border="1">
-        <thead>
-            <tr>
-                <th>Nama</th>
-                <th>Kordinat</th>
-                <th>Tipe</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <!-- Tabel untuk menampilkan data GeoJSON -->
+        <div class="mt-8">
+            <div class="point-table">
+                <h1 class="text-xl font-semibold mb-4">Tipe Point</h1>
+                <table id="pointTable" class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">No</th>
+                            <th class="px-4 py-2">Nama</th>
+                            <th class="px-4 py-2">Koordinat</th>
+                            <th class="px-4 py-2">Tipe</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>    
+        </div>
+        <!-- Tabel untuk menampilkan data GeoJSON Polygon -->
+<div class="mt-8">
+    <div class="polygon-table">
+        <h1 class="text-xl font-semibold mb-4">Tipe Polygon</h1>
+        <table id="polygonTable" class="table-auto w-full">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">Nama</th>
+                    <th class="px-4 py-2">Koordinat</th>
+                    <th class="px-4 py-2">Tipe</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 </div>
 
-<!-- Include the separated JavaScript files -->
-<script type="module" src="./app.js"></script>
-<script type="module" src="./maps.js"></script>
+<!-- Tabel untuk menampilkan data GeoJSON Polyline -->
+<div class="mt-8">
+    <div class="polyline-table">
+        <h1 class="text-xl font-semibold mb-4">Tipe Polyline</h1>
+        <table id="polylineTable" class="table-auto w-full">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">No</th>
+                    <th class="px-4 py-2">Nama</th>
+                    <th class="px-4 py-2">Koordinat</th>
+                    <th class="px-4 py-2">Tipe</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
 
+    </div>
+
+    <!-- Include the separated JavaScript files -->
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./maps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.js"></script>
 </body>
 </html>
