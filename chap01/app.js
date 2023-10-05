@@ -42,3 +42,69 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Err:", error));
 });
+
+
+// this is active status profile in realtime
+// Simulasi perubahan status aktif (misalnya ketika tombol di klik)
+let isActive = true;
+
+// Fungsi untuk mengubah status aktif dan memperbarui teks
+function toggleActiveStatus() {
+    isActive = !isActive; // Toggle status aktif
+    const activeStatusElement = document.getElementById("activeStatus");
+
+    if (isActive) {
+        activeStatusElement.textContent = "Online";
+    } else {
+        activeStatusElement.textContent = "Offline";
+    }
+}
+
+// Panggil fungsi ini ketika status aktif berubah (misalnya saat tombol di klik)
+toggleActiveStatus();
+
+// fungsi pengubahan nama,npm,kelas dan dosen pengampu
+document.addEventListener("DOMContentLoaded", () => {
+    // Mengambil data dari local storage jika sudah ada
+    const storedName = localStorage.getItem("name");
+    const storedNpm = localStorage.getItem("npm");
+    const storedClass = localStorage.getItem("class");
+    const storedLecturer = localStorage.getItem("lecturer");
+
+    // Mengisi input dan teks dengan data yang diambil
+    nameElement.textContent = storedName || "Muhammad Faisal Ashshidiq";
+    npmInput.value = storedNpm || "";
+    classInput.value = storedClass || "";
+    lecturerInput.value = storedLecturer || "";
+
+    // ... (kode lainnya) ...
+
+    // Fungsi untuk mengubah nama, NPM, dan dosen pengampu
+    settingsMenu.addEventListener("click", () => {
+        const currentName = nameElement.textContent.trim();
+        const currentNpm = npmInput.value;
+        const currentClass = classInput.value;
+        const currentLecturer = lecturerInput.value;
+
+        const newName = prompt("Edit your name:", currentName);
+        if (newName !== null && newName !== "") {
+            nameElement.textContent = newName;
+
+            // Menyimpan nama ke local storage
+            localStorage.setItem("name", newName);
+        }
+
+        npmInput.value = prompt("Edit NPM:", currentNpm) || currentNpm;
+        classInput.value = prompt("Edit Kelas:", currentClass) || currentClass;
+        lecturerInput.value = prompt("Edit Dosen Pengampu:", currentLecturer) || currentLecturer;
+
+        // Menyimpan NPM, kelas, dan dosen pengampu ke local storage
+        localStorage.setItem("npm", npmInput.value);
+        localStorage.setItem("class", classInput.value);
+        localStorage.setItem("lecturer", lecturerInput.value);
+    });
+
+    // ... (kode lainnya) ...
+});
+
+
