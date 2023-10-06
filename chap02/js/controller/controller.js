@@ -39,7 +39,7 @@ export function ColorSwitcher(value, map, source){
             source: pointSource,
             style: new ol.style.Style({
                 stroke: new ol.style.Stroke({
-                    color: 'red',
+                    color: 'Orange',
                     width: 4
                 })
             })
@@ -70,7 +70,7 @@ const polylineLayer = new ol.layer.Vector({
     }),
     style: new ol.style.Style({
         stroke: new ol.style.Stroke({
-            color: 'red',
+            color: 'Yellow',
             width: 3,
         }),
     }),
@@ -84,7 +84,7 @@ const polygonLayer = new ol.layer.Vector({
     style: new ol.style.Style({
         fill: new ol.style.Fill({ color: 'green' }),
         stroke: new ol.style.Stroke({
-            color: 'black',
+            color: 'Green',
             width: 2,
         }),
     }),
