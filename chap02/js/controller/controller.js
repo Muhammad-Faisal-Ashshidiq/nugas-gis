@@ -47,3 +47,47 @@ export function ColorSwitcher(value, map, source){
         map.addLayer(LineLayer)
 }
 }
+
+// Create layers for different feature types
+const pointLayer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'https://raw.githubusercontent.com/muhammad-faisal-ashshidiq/nugas-gis/main/data.json',
+        format: new ol.format.GeoJSON(),
+    }),
+    style: new ol.style.Style({
+        image: new ol.style.Circle({
+            radius: 6,
+            fill: new ol.style.Fill({ color: 'blue' }),
+            stroke: new ol.style.Stroke({ color: 'black', width: 2 }),
+        }),
+    }),
+});
+
+const polylineLayer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'https://raw.githubusercontent.com/muhammad-faisal-ashshidiq/nugas-gis/main/data.json',
+        format: new ol.format.GeoJSON(),
+    }),
+    style: new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'red',
+            width: 3,
+        }),
+    }),
+});
+
+const polygonLayer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'https://raw.githubusercontent.com/muhammad-faisal-ashshidiq/nugas-gis/main/data.json',
+        format: new ol.format.GeoJSON(),
+    }),
+    style: new ol.style.Style({
+        fill: new ol.style.Fill({ color: 'green' }),
+        stroke: new ol.style.Stroke({
+            color: 'black',
+            width: 2,
+        }),
+    }),
+});
+
+
