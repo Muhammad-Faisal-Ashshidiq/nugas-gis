@@ -16,41 +16,6 @@ map.on('pointermove', onMapPointerMove);
 map.on('movestart', disposePopover);
 get(URLGeoJson,responseData); 
 
-// main.js or app.js
-import Map from 'ol/Map';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
-
-// Function to initialize and display the map
-function initMap() {
-    // Create a map view with a center and zoom level
-    const view = new View({
-        center: [0, 0], // Center coordinates (e.g., longitude, latitude)
-        zoom: 10,       // Initial zoom level
-    });
-
-    // Create a tile layer with OpenStreetMap as the source
-    const osmLayer = new TileLayer({
-        source: new OSM(),
-    });
-
-    // Create the map with the view and layers
-    const map = new Map({
-        target: 'map', // The ID of the div where the map will be displayed
-        layers: [osmLayer],
-        view: view,
-    });
-
-    // Add any additional layers or features to your map here
-
-    return map;
-}
-
-// Call the initMap function to create and display the map
-const map = initMap();
-export default map;
-
 
     //download data point, polygon, dan polyline
     const pointSource = new ol.source.Vector({
@@ -97,3 +62,4 @@ export default map;
 
     map.addLayer(polylayer);
     map.addLayer(layerpoint);
+

@@ -55,20 +55,58 @@ body {
   content: "✖";
 }
 
-th.nama,
-td.nama {
-  width: 99px; /* Adjust the width as needed */
+
+#info-table {
+  max-width: 800px;
+  width: 100%;
+}
+
+#info-table h2 {
+  text-align: center;
+}
+
+#info-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+#info-table th, #info-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#info-table th {
+  background-color: #f2f2f2;
+}
+
+#info-table td {
+  font-size: 14px;
+}
+
+#info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#info-table tr:hover {
+  background-color: #e6e6e6;
+}
+
+th.name,
+td.name {
+  width: 100px; /* Adjust the width as needed */
   white-space: normal; /* Enable text wrapping */
 }
 
-th.kordinat,
-td.kordinat {
+th.coordinate,
+td.coordinate {
   width: 50px; /* Adjust the width for the Coordinate column */
-  white-space: normal; 
+  white-space: normal; /* Enable text wrapping */
 }
 
-th.tipe,
-td.tipe {
-  width: 100px; 
-  white-space: normal;
+th.type,
+td.type {
+  width: 100px; /* Adjust the width as needed */
+  white-space: normal; /* Enable text wrapping */
 }
