@@ -54,3 +54,21 @@ body {
 .ol-popup-closer:after {
   content: "✖";
 }
+
+th.nama,
+td.nama {
+  width: 99px; /* Adjust the width as needed */
+  white-space: normal; /* Enable text wrapping */
+}
+
+th.kordinat,
+td.kordinat {
+  width: 50px; /* Adjust the width for the Coordinate column */
+  white-space: normal; 
+}
+
+th.tipe,
+td.tipe {
+  width: 100px; 
+  white-space: normal;
+}
