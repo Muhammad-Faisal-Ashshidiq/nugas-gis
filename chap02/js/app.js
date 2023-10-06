@@ -36,6 +36,23 @@ function displayFeatureInfo(evt) {
 map.on('click', displayFeatureInfo);
 
 // ...
+// Mendapatkan elemen tombol zoom-in dan zoom-out
+const zoomOutButton = document.getElementById('zoom-out');
+const zoomInButton = document.getElementById('zoom-in');
+
+// Menambahkan event listener untuk zoom-out
+zoomOutButton.addEventListener('click', function () {
+  const view = map.getView();
+  const zoom = view.getZoom();
+  view.setZoom(zoom - 1);
+});
+
+// Menambahkan event listener untuk zoom-in
+zoomInButton.addEventListener('click', function () {
+  const view = map.getView();
+  const zoom = view.getZoom();
+  view.setZoom(zoom + 1);
+});
 
 
 // table
