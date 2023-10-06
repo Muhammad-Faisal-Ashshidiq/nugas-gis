@@ -1,19 +1,3 @@
-import {map} from './config/configMaps.js';
-import {onClosePopupClick,onDeleteMarkerClick,onSubmitMarkerClick,onMapClick,onMapPointerMove,disposePopover} from './controller/popup.js';
-import {onClick} from 'https://jscroot.github.io/element/croot.js';
-import {getAllCoordinates} from './controller/cog.js';
-
-onClick('popup-closer',onClosePopupClick);
-onClick('insertmarkerbutton',onSubmitMarkerClick);
-onClick('hapusbutton',onDeleteMarkerClick);
-onClick('hitungcogbutton',getAllCoordinates);
-
-map.on('click', onMapClick);
-map.on('pointermove', onMapPointerMove);
-map.on('movestart', disposePopover);
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
     const polygonTable = document.getElementById("polygonTable").getElementsByTagName('tbody')[0];
@@ -78,5 +62,3 @@ function toggleActiveStatus() {
 
 // Panggil fungsi ini ketika status aktif berubah (misalnya saat tombol di klik)
 toggleActiveStatus();
-
-
