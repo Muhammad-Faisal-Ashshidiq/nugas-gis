@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tugas Chapter 01 Sistem Informasi Geo Grafis</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.css" />
+    <title>Tugas Chapter 02 Sistem Informasi Geo Grafis</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style copy.css">
 </head>
+
 <body class="bg-gray-200">
     <div class="container mx-auto p-4">
         <div class="flex justify-between">
-        <!-- Menampilkan peta OpenLayers -->
-        <a class="sr-only" href="#map">Go to map</a>
-        <div id="map" class="map bg-white rounded shadow-md p-2" tabindex="0"></div>
+            <!-- Menampilkan peta petapedia -->
+            <!-- <a class="sr-only" href="#map">Go to map</a> -->
+            <div id="map" class="map bg-white rounded shadow-md p-1" tabindex="0"></div>
+            <!-- Tombol untuk zoom in dan zoom out -->
+            <!-- <button id="zoom-out" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Zoom out</button>
+            <button id="zoom-in" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Zoom in</button> -->
+            
+            <!-- popup -->
+        
+ <input type="hidden" id="idmarker" name="idmarker" value="">
+
+ <div id="popupinfo" class="ol-popup">
+     <b id="popupinfo-title"></b>
+     <div id="popupinfo-content"></div>
+     <div id="popupinfo-delete">
+         <input type="hidden" id="idmarker" name="idmarker" value="">
+         <button id="hapusbutton" type="button">Hapus</button><button id="hitungcogbutton" type="button">Hitung COG</button><br>
+        </div>
+        
+    </div>
+    
+    <!-- <div id="popup" class="ol-popup">
+        <b id="popup-title">Input Center of Gravity</b><a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+     <div id="popup-input">
+         Nama : <input type="text" id="name" name="name" required><br>
+         Volume : <input type="text" id="volume" name="volume" required><br>
+         <input type="hidden" id="long" name="long" value="">
+         <input type="hidden" id="lat" name="lat" value="">
+         <button id="insertmarkerbutton" type="button">Input</button><br>
+     </div>
+ </div> -->
+
         <!-- this is name profile  -->
         <div class="w-80 bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer" id="settingsMenu">
             <div class="h-48 w-full checker-bg flex items-center justify-center p-4 text-blue-500">
@@ -44,14 +75,8 @@
                 <input class="text-gray-400 text-sm my-1" id="lecturerInput" type="text" placeholder="Your Lecturer Here">
             </div>
         </div>
+    </div>
 
-
-        </div>
-        <!-- Tombol untuk zoom in dan zoom out -->
-        <div class="flex space-x-4 mt-4">
-            <button id="zoom-out" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Zoom out</button>
-            <button id="zoom-in" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Zoom in</button>
-        </div>
 
         <!-- Tabel untuk menampilkan data GeoJSON -->
         <div class="mt-8">
@@ -109,8 +134,9 @@
     </div>
 
     <!-- Include the separated JavaScript files -->
-    <script type="module" src="./app.js"></script>
-    <script type="module" src="./maps.js"></script>
+    <script type="module" src="../chap02/js/app.js"></script>
+    <!-- <script type="module" src="./maps.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.js"></script>
 </body>
 </html>
+

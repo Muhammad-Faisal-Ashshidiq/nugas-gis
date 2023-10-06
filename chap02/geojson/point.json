@@ -1,0 +1,280 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "ayam berkah"
+        },
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                107.6909668493933,
+                -6.906439218826975
+              ],
+              [
+                107.69099352431527,
+                -6.90636646508338
+              ],
+              [
+                107.6909539407468,
+                -6.906353505135641
+              ],
+              [
+                107.69094976552697,
+                -6.9063599581966315
+              ],
+              [
+                107.69084339359938,
+                -6.906323497882923
+              ],
+              [
+                107.69082805535533,
+                -6.906357455027219
+              ],
+              [
+                107.69087712572093,
+                -6.906376508713009
+              ],
+              [
+                107.69086475347694,
+                -6.906400437930159
+              ],
+              [
+                107.6909668493933,
+                -6.906439218826975
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": 49
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "sdn cijambe 224"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69252982291027,
+            -6.909444102282592
+          ],
+          "type": "Point"
+        },
+        "id": 50
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "konter rrc"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69231832828689,
+            -6.909204307897269
+          ],
+          "type": "Point"
+        },
+        "id": 51
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "kontrakan ibu ray"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69232927325396,
+            -6.909129518605141
+          ],
+          "type": "Point"
+        },
+        "id": 52
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "warung mah iki"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69228935995204,
+            -6.909017181180275
+          ],
+          "type": "Point"
+        },
+        "id": 53
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah ibu oca"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69219314725785,
+            -6.909150050823797
+          ],
+          "type": "Point"
+        },
+        "id": 54
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah pak aji"
+        },
+        "geometry": {
+          "coordinates": [
+            107.6921244181508,
+            -6.909078343274601
+          ],
+          "type": "Point"
+        },
+        "id": 55
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah indah"
+        },
+        "geometry": {
+          "coordinates": [
+            107.6921349194846,
+            -6.908974301940333
+          ],
+          "type": "Point"
+        },
+        "id": 56
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah pak haji"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69214532588705,
+            -6.908914227075684
+          ],
+          "type": "Point"
+        },
+        "id": 57
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah ibu nolis"
+        },
+        "geometry": {
+          "coordinates": [
+            107.6922522078001,
+            -6.90891295592273
+          ],
+          "type": "Point"
+        },
+        "id": 58
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah ibu rizki"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69233555414172,
+            -6.9088400146441415
+          ],
+          "type": "Point"
+        },
+        "id": 59
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "warung mungie"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69235388518644,
+            -6.908753299097569
+          ],
+          "type": "Point"
+        },
+        "id": 60
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "kontrakan bu haji"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69207901377058,
+            -6.908794650552423
+          ],
+          "type": "Point"
+        },
+        "id": 61
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah pak asep"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69207845244921,
+            -6.909065532744123
+          ],
+          "type": "Point"
+        },
+        "id": 62
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "rumah orang kaya2"
+        },
+        "geometry": {
+          "coordinates": [
+            107.692029127767,
+            -6.909061637944717
+          ],
+          "type": "Point"
+        },
+        "id": 63
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "warung ibu ayu"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69196144064415,
+            -6.909011026060824
+          ],
+          "type": "Point"
+        },
+        "id": 64
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "kontrakan pak aji"
+        },
+        "geometry": {
+          "coordinates": [
+            107.69200660745321,
+            -6.909011026060824
+          ],
+          "type": "Point"
+        },
+        "id": 65
+      }
+    ]
+}
+      
