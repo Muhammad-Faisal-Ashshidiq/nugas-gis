@@ -57,8 +57,8 @@ const pointLayer = new ol.layer.Vector({
     style: new ol.style.Style({
         image: new ol.style.Circle({
             radius: 6,
-            fill: new ol.style.Fill({ color: 'blue' }),
-            stroke: new ol.style.Stroke({ color: 'black', width: 2 }),
+            fill: new ol.style.Fill({ color: 'Green' }),
+            stroke: new ol.style.Stroke({ color: 'Grey', width: 2 }),
         }),
     }),
 });

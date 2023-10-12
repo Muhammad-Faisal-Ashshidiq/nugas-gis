@@ -28,8 +28,8 @@ get(URLGeoJson,responseData);
         source: pointSource,
         style: new ol.style.Style({
             image: new ol.style.Icon({
-                src: 'img/icog.png', 
-                scale: 0.5, 
+                src: 'img/lokasi.png', 
+                scale: 0.6, 
                 opacity: 1
             })
         })
@@ -44,7 +44,7 @@ get(URLGeoJson,responseData);
             if (featureType === 'Polygon') {
                 return new ol.style.Style({
                     stroke: new ol.style.Stroke({
-                        color: 'blue', 
+                        color: 'Orange', 
                         width: 2
                     })
                 });
@@ -52,7 +52,7 @@ get(URLGeoJson,responseData);
                 
                 return new ol.style.Style({
                     stroke: new ol.style.Stroke({
-                        color: 'red', 
+                        color: 'Black', 
                         width: 3
                     })
                 });
