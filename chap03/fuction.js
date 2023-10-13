@@ -1,26 +1,26 @@
-// import { get } from "https://jscroot.github.io/api/croot.js";
-// import {setInner,addChild } from "https://jscroot.github.io/element/croot.js";
-// export let URLGeoJson "";
-export let tableTag= "tr";
+import { get } from "https://jscroot.github.io/api/croot.js";
+import { setInner, addChild } from "https://jscroot.github.io/element/croot.js";
 
-import { tableRowClass, tableTag } from "../chap02/js/template/template";
+export let URLGeoJson = "https://asia-southeast2-faisal-401823.cloudfunctions.net/function-1";
+export let tableTag = "tr";
 
-export let tableRowClass= "content is-small";
-export let tableTemplate= `
+import { tableRowClass } from "../template/template.js";
+
+export let tableTemplate = `
 <td>#TIPE#</td>
 <td>#NAMA#</td>
-<td>#KORDINAT#</td>`
+<td>#KORDINAT#</td>`;
 
-export function responseData(result){
+export function responseData(result) {
     console.log(result);
-    results.forEach(isi);
+    result.forEach(isi);
 }
 
-export function isi(value){
+export function isi(value) {
     let konten = tableTemplate
-    .replace("#TIPE#",value.geometry.type)
-    .replace("#NAMA#",value.properties.nama)
-    .replace("#KORDINAT#",value.geometry.coordinates);
-console.log(konten);
-addChild("lokasi",tableTag,tableRowClass,konten);
+        .replace("#TIPE#", value.geometry.type)
+        .replace("#NAMA#", value.properties.nama)
+        .replace("#KORDINAT#", value.geometry.coordinates);
+    console.log(konten);
+    addChild("lokasi", tableTag, tableRowClass, konten);
 }
