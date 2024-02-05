@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4 Sistem Informasi Geografis</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="p-4 border-t border-gray-200">
+        <div class="flex items-center justify-between">
+          <h1 class="text-gray-600 font-medium">Muhammad Faisal Ashishidiq</h1>
+          <button class="text-gray-500 hover:text-gray-900">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+  </svg> -->
+          </button>
+        </div>
+      </div>
+      <div class="mt-2">
+        <p class="text-gray-600 text-sm">NPM: 1214041</p>
+        
+    </div>
+    <div class="mt-2">
+        <p class="text-gray-600 text-sm">Kelas: 3A Teknik Informatika</p>
+        
+    </div>
+    <div class="mt-2">
+        <p class="text-gray-600 text-sm">Dosen Pengampu: Pak Rolly Awangga</p>
+
+    </div>
+</div>
+
+    <div id='map'></div>
+
+    <div class="col-auto">
+        <span class="input-group">
+          <label class="input-group-text" for="type">Geometry type:</label>
+          <select class="form-select" id="type">
+            <option value="Point">Point</option>
+            <option value="LineString">LineString</option>
+            <option value="Polygon">Polygon</option>
+            <option value="Circle">Circle</option>
+            <option value="None" selected>None</option>
+          </select>
+          <input class="form-control" type="button" value="Undo" id="undo">
+        </span>
+      </div>
+
+    <input type="hidden" id="idmarker" name="idmarker" value="">
+
+    <div id="popupinfo" class="ol-popup">
+        <b id="popupinfo-title"></b>
+        <div id="popupinfo-content"></div>
+        <div id="popupinfo-delete">
+            <input type="hidden" id="idmarker" name="idmarker" value="">
+            <button id="hapusbutton" type="button">Hapus</button><button id="hitungcogbutton" type="button">Hitung
+                COG</button><br>
+        </div>
+
+    </div>
+
+    <div id="popup" class="ol-popup">
+        <b id="popup-title">Input Center of Gravity</b><a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+        <div id="popup-input">
+            Nama : <input type="text" id="name" name="name" required><br>
+            Volume : <input type="text" id="volume" name="volume" required><br>
+            <input type="hidden" id="long" name="long" value="">
+            <input type="hidden" id="lat" name="lat" value="">
+            <button id="insertmarkerbutton" type="button">Input</button><br>
+        </div>
+    </div>
+    <div id="info-table">
+        <div class="point-table">
+            <br>
+            <h3 style="text-align: center;">Data Point</h3>
+            <table id="pointTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Koordinat</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="lokasi"></tbody>
+            </table>
+        </div>
+
+        <div class="polygon-table"><br>
+            <h3 style="text-align: center;">Data Polygon</h3>
+            <table id="polygonTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Koordinat</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="polygon"></tbody>
+            </table>
+        </div>
+
+        <div class="polyline-table"><br>
+            <h3 style="text-align: center;">Data LineString</h3>
+            <table id="polylineTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Koordinat</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="line"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.1.0/dist/ol.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

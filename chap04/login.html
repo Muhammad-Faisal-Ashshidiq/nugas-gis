@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <!-- Bulma Version 0.6.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css"
+      integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw="
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <div id="app">
+      <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <form class="form-horizontal w-3/4 mx-auto" id="formlogin">
+            <div class="column is-4 is-offset-4">
+              <p class="subtitle has-text-grey">Please login for go to main page.</p>
+              <div class="box">
+                  <div class="field">
+                    <div class="control">
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="username"
+                        autocomplete="username"
+                        id="username"
+                        value="gilar"
+                        required
+                        autofocus
+                      />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input
+                        class="input"
+                        type="password"
+                        placeholder="password"
+                        autocomplete="current-password"
+                        id="password"
+                        value="gilar"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <button class="button is-block is-link is-fullwidth is-medium" type="submit" id="button">
+                    Login
+                  </button>
+                  <br>
+                  <p class="text-sm leading-relaxed text-grey-900">Not registered yet? <a href="register.html" class="font-bold text-grey-700">Create an Account</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+            <!-- Scripts -->
+            <script type="module" src="js/login.js"></script>
+  </body>
+</html>
